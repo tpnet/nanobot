@@ -834,7 +834,8 @@ Connects directly to any OpenAI-compatible endpoint — LM Studio, llama.cpp, To
   "providers": {
     "custom": {
       "apiKey": "your-api-key",
-      "apiBase": "https://api.your-provider.com/v1"
+      "apiBase": "https://api.your-provider.com/v1",
+      "api": "chat-completions"
     }
   },
   "agents": {
@@ -845,6 +846,7 @@ Connects directly to any OpenAI-compatible endpoint — LM Studio, llama.cpp, To
 }
 ```
 
+> `api` is optional. Use `"chat-completions"` (default) for OpenAI-compatible chat endpoints, or `"openai-responses"` for Responses API gateways.
 > For local servers that don't require a key, set `apiKey` to any non-empty string (e.g. `"no-key"`).
 
 </details>
